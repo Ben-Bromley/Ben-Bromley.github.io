@@ -10,9 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84d910be-8d04-4e06-afb4-b7b1bd40a94d" name="Default Changelist" comment="Added Navigation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="84d910be-8d04-4e06-afb4-b7b1bd40a94d" name="Default Changelist" comment="Added Navigation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605988472759</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finished Nav HTML">
+      <created>1605991810477</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605991810477</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,14 +111,15 @@
     <MESSAGE value="Content removed, structure tags added, starting to add basic comments" />
     <MESSAGE value="Added some metadata, including automated page width to device width" />
     <MESSAGE value="Added Navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Navigation" />
+    <MESSAGE value="Finished Nav HTML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Nav HTML" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="334" y="89" width="800" height="355" key="Vcs.Push.Dialog.v2" timestamp="1605988486638">
+    <state x="334" y="89" width="800" height="355" key="Vcs.Push.Dialog.v2" timestamp="1605991831816">
       <screen x="0" y="22" width="1440" height="849" />
     </state>
     <state x="320" y="170" key="Vcs.Push.Dialog.v2/0.22.1440.843@0.22.1440.843" timestamp="1605909476794" />
-    <state x="334" y="89" width="800" height="355" key="Vcs.Push.Dialog.v2/0.22.1440.849@0.22.1440.849" timestamp="1605988486638" />
+    <state x="334" y="89" width="800" height="355" key="Vcs.Push.Dialog.v2/0.22.1440.849@0.22.1440.849" timestamp="1605991831816" />
     <state x="512" y="351" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605983228680">
       <screen x="0" y="22" width="1440" height="843" />
     </state>
