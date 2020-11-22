@@ -6,13 +6,30 @@
     background-color: #24252A;
 }
 
-li, a, button {
+li, a, button, h1, h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: #edf0f1;
   text-decoration: none;
-
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  color: #edf0f1;
+  text-decoration: none;
+  align-items: center;
+  padding: 20px 10%;
+}
+.maintext {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ccc;
+  text-decoration: none;
+  align-items: center;
+  padding: 30px 10%;
 }
 
 header {
