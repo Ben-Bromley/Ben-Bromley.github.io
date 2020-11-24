@@ -14,19 +14,7 @@ main {
   padding: 0;
   background-color: #44454A;
 }
-/*
-.column {
-  float: left;
-  width: 60%;
-}
-*/
-/*
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-*/
+
 .row {
   display: flex;
 }
