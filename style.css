@@ -14,19 +14,35 @@ main {
   padding: 0;
   background-color: #44454A;
 }
-
+/*
 .column {
   float: left;
-  width: 50%;
+  width: 60%;
 }
-
-/* Clear floats after the columns */
+*/
+/*
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+*/
+.row {
+  display: flex;
+}
 
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 70%;
+}
+
+.right {
+  width: 30%;
+}
 .navtext, button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
