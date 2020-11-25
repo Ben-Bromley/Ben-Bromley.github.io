@@ -7,12 +7,42 @@ header {
   background-color: #24252A;
 }
 
+footer {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252A;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 10%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10%;
+}
+
 main {
   display: block;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #44454A;
+  overflow: hidden;
+}
+
+.foottext {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ccc;
 }
 
 .colright {
@@ -35,6 +65,7 @@ main {
 .right {
   width: 30%;
 }
+
 .navtext, button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -62,21 +93,21 @@ main {
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 44px;
+  font-size: 40px;
   color: #edf0f1;
   text-decoration: none;
   align-items: center;
-  padding: 20px 11%;
+  padding: 5px 11%;
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 30px;
   color: #edf0f1;
   text-decoration: none;
   align-items: center;
-  padding: 10px 11%;
+  padding: 5px 11%;
 }
 
 .maintext {
@@ -86,7 +117,7 @@ h2 {
   color: #ccc;
   text-decoration: none;
   align-items: center;
-  padding: 10px 11%;
+  padding: 0px 11%;
 }
 
 .columntwotext {
@@ -99,14 +130,6 @@ h2 {
   padding: 1px 0%;
 }
 
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-}
-
 .logo {
   cursor: pointer;
 }
@@ -117,7 +140,7 @@ header {
 
 .nav__links li {
   display: inline-block;
-  padding: 0px 20px
+  padding: 0px 30px
 }
 
 .nav__links li a {
