@@ -20,6 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 25px 10%;
+  overflow: hidden;
 }
 
 footer {
@@ -27,6 +28,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 40px 10%;
+  overflow: hidden;
+  margin: 0;
 }
 
 main {
@@ -36,6 +39,10 @@ main {
   padding: 0;
   background-color: #44454A;
   overflow: hidden;
+  min-height: 1000px;
+}
+body {
+
 }
 
 .foottext {
@@ -130,6 +137,16 @@ h2 {
   padding: 1px 0%;
 }
 
+.SocialTitles {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+  color: #ccc;
+  text-decoration: none;
+  align-items: center;
+  padding: 1px 0%;
+}
+
 .logo {
   cursor: pointer;
 }
@@ -164,12 +181,18 @@ button:hover {
     background-color: rgba(0,136,169,0.8);
 }
 
+.ProfilePicture img {
+  border-radius: 20%
+}
+
+
+
 /* SOCIAL MEDIA ICONS */
 
 .fa {
-  padding: 10px;
+  padding: 15px;
   font-size: 30px;
-  width: 15px;
+  width: 20px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
