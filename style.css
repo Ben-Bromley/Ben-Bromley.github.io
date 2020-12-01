@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+:root {
+  --background-colour: #24252A
+}
+
 header {
   display: block;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252A;
+  background-color: var(--background-colour);
 }
 
 footer {
@@ -12,7 +16,7 @@ footer {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252A;
+  background-color: var(--background-colour);
 }
 
 header {
@@ -24,10 +28,10 @@ header {
 }
 
 footer {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 10%;
+  padding: 40px 5%;
   overflow: hidden;
   margin: 0;
 }
@@ -41,6 +45,7 @@ main {
   overflow: hidden;
   min-height: 1000px;
 }
+
 body {
 
 }
@@ -49,29 +54,46 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  color: #ccc;
+  text-align: left;
+  color: #aaa;
+  padding: 5px;
 }
 
-.colright {
-  margin: 20px;
+.footline {
+  width: 100%
 }
 
-.row {
-  display: flex;
+@media screen and (min-width: 1000px) {
+  /* TODO: add alt nav button to this section */
+  .row {
+    display: flex;
+  }
+  .column {
+    float: left;
+    padding: 5px;
+  }
+  .left {
+    width: 70%;
+  }
+  .right {
+    width: 30%;
+  }
+  .colright {
+    margin: 10px;
+  }
 }
 
-.column {
-  float: left;
-  padding: 10px;
+@media screen and (max-width:999px) {
+  .colright {
+    margin:10px 11%;
+  }
+  .foottext {
+    margin: 2px 1%;
+    float: left;
+  }
 }
 
-.left {
-  width: 70%;
-}
 
-.right {
-  width: 30%;
-}
 
 .navtext, button {
   font-family: "Montserrat", sans-serif;
@@ -95,6 +117,10 @@ body {
 
 .MainTextEmbed:hover {
   color: #0088a9
+}
+
+.HomeImage {
+  padding: 10px 35%;
 }
 
 h1 {
@@ -136,6 +162,8 @@ h2 {
   align-items: center;
   padding: 1px 0%;
 }
+
+
 
 .SocialTitles {
   font-family: "Montserrat", sans-serif;
@@ -181,10 +209,11 @@ button:hover {
     background-color: rgba(0,136,169,0.8);
 }
 
+/*
 .ProfilePicture img {
   border-radius: 20%
 }
-
+*/
 
 
 /* SOCIAL MEDIA ICONS */
@@ -257,4 +286,12 @@ button:hover {
 .fa-reddit {
   background: #ff5700;
   color: white;
+}
+.fafoot {
+  background: var(--background-colour);
+  text-decoration: none;
+  padding: 15px;
+  width: 20px;
+  text-align: center;
+  margin: 0px 4px;
 }
