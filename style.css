@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 :root {
-  --background-colour: #24252A
+  --H-colour: #FFF;
+  --F-colour: #252525;
+  --Main-colour: #999;
+  --MainTextColour: #0A0A0A
 }
 
 header {
@@ -8,7 +11,7 @@ header {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: var(--background-colour);
+  background-color: var(--H-colour);
 }
 
 footer {
@@ -16,7 +19,7 @@ footer {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: var(--background-colour);
+  background-color: var(--F-colour);
 }
 
 header {
@@ -36,18 +39,21 @@ footer {
   margin: 0;
 }
 
-main {
+.mainbody {
   display: block;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #44454A;
+  background-color: var(--Main-colour);
   overflow: hidden;
   min-height: 1000px;
 }
 
-body {
-
+.background {
+  background-image: url('HrefFiles/HomeImage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .foottext {
@@ -99,7 +105,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  color: #edf0f1;
+  color: var(--MainTextColour);
   text-decoration: none;
 }
 
@@ -157,7 +163,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   font-size: 20px;
-  color: #ccc;
+  color: var(--MainTextColour);
   text-decoration: none;
   align-items: center;
   padding: 1px 0%;
@@ -169,7 +175,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   font-size: 25px;
-  color: #ccc;
+  color: var(--MainTextColour);
   text-decoration: none;
   align-items: center;
   padding: 1px 0%;
@@ -288,7 +294,7 @@ button:hover {
   color: white;
 }
 .fafoot {
-  background: var(--background-colour);
+  background: var(--HF-colour);
   text-decoration: none;
   padding: 15px;
   width: 20px;
