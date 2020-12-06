@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 :root {
-  --H-colour: #FFF;
+  --H-colour: #252525;
   --F-colour: #252525;
   --Main-colour: #999;
-  --MainTextColour: #0A0A0A
+  --MainTextColour: #FFF;
 }
 
 header {
@@ -20,6 +20,10 @@ footer {
   margin: 0;
   padding: 0;
   background-color: var(--F-colour);
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 5%;
+  overflow: hidden;
 }
 
 header {
@@ -28,15 +32,6 @@ header {
   align-items: center;
   padding: 25px 10%;
   overflow: hidden;
-}
-
-footer {
-  display: block;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 5%;
-  overflow: hidden;
-  margin: 0;
 }
 
 .mainbody {
@@ -50,10 +45,11 @@ footer {
 }
 
 .background {
-  background-image: url('HrefFiles/HomeImage.jpg');
+  background-image: url('HrefFiles/BeachHomeImage.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center
 }
 
 .foottext {
@@ -69,26 +65,59 @@ footer {
   width: 100%
 }
 
+.HomeTitle {
+  text-align: center;
+  color: #252525;
+  margin: 80px
+}
+
+.homepanel {
+  padding: 5px 10px ;
+  background-color: rgba(50,50,50,0.7);
+  border: none;
+  border-radius: 50px;
+  margin: 30px;
+}
+
 @media screen and (min-width: 1000px) {
   /* TODO: add alt nav button to this section */
-  .row {
+
+  /* Main Home page columns */
+  main .row {
     display: flex;
   }
-  .column {
+   main .column {
     float: left;
-    padding: 5px;
+    padding: 0px;
   }
-  .left {
-    width: 70%;
+  main .left {
+    width: 50%;
+    margin: 0px;
   }
-  .right {
-    width: 30%;
+  main .right {
+    width: 50%;
+    margin: 0px;
   }
-  .colright {
+
+  /* Footer columns */
+  footer .row {
+    display: flex;
+  }
+  footer .column {
+    float: left;
+    padding: 0px;
+  }
+  footer .left {
+    width: 50%;
+    margin: 10px;
+  }
+  footer .right {
+    width: 50%;
     margin: 10px;
   }
 }
 
+/* ¡ UNNEEDED CODE !
 @media screen and (max-width:999px) {
   .colright {
     margin:10px 11%;
@@ -97,15 +126,13 @@ footer {
     margin: 2px 1%;
     float: left;
   }
-}
-
-
+} */
 
 .navtext, button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  color: var(--MainTextColour);
+  color: #FFF;
   text-decoration: none;
 }
 
@@ -159,6 +186,7 @@ h2 {
   padding: 0px 11%;
 }
 
+/*
 .columntwotext {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
@@ -168,7 +196,7 @@ h2 {
   align-items: center;
   padding: 1px 0%;
 }
-
+*/
 
 
 .SocialTitles {
@@ -214,12 +242,6 @@ button {
 button:hover {
     background-color: rgba(0,136,169,0.8);
 }
-
-/*
-.ProfilePicture img {
-  border-radius: 20%
-}
-*/
 
 
 /* SOCIAL MEDIA ICONS */
