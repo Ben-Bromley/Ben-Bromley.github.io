@@ -67,7 +67,7 @@ header {
 
 .HomeTitle {
   text-align: center;
-  color: #252525;
+  color: var(--MainTextColour);
   margin: 80px
 }
 
