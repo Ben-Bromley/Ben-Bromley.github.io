@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 :root {
   --H-colour: #FFF;
-  --F-colour: #FFF;
-  --Main-colour: #999;
+  --F-colour: #252525;
+  --Main-colour: #FFF;
   --MainTextColour: #252525;
 }
 
@@ -44,13 +44,14 @@ header {
   min-height: 1000px;
 }
 
+/* REMOVED BECAUSE NOT USING BACKGROUND IMAGE
 .background {
   background-image: url('HrefFiles/BeachHomeImage.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center
-}
+} */
 
 .foottext {
   font-family: "Montserrat", sans-serif;
@@ -71,13 +72,14 @@ header {
   margin: 80px
 }
 
+/* NOT IN USE NOW
 .homepanel {
   padding: 5px 10px ;
   background-color: rgba(50,50,50,0.7);
   border: none;
   border-radius: 50px;
   margin: 30px;
-}
+} */
 
 @media screen and (min-width: 1000px) {
   /* TODO: add alt nav button to this section */
@@ -132,7 +134,7 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  color: #FFF;
+  color: var(--MainTextColour);
   text-decoration: none;
 }
 
@@ -140,7 +142,7 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color: #ccc;
+  color: var(--MainTextColour);
   text-decoration: underline;
 }
 
@@ -160,7 +162,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 38px;
-  color: #edf0f1;
+  color: var(--MainTextColour);
   text-decoration: none;
   align-items: center;
   padding: 5px 11%;
@@ -170,7 +172,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 30px;
-  color: #edf0f1;
+  color: var(--MainTextColour);
   text-decoration: none;
   align-items: center;
   padding: 5px 11%;
@@ -180,7 +182,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   font-size: 20px;
-  color: #ccc;
+  color: var(--MainTextColour);
   text-decoration: none;
   align-items: center;
   padding: 0px 11%;
