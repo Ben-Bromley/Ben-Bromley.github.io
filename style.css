@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 :root {
-  --H-colour: #252525;
-  --F-colour: #252525;
+  --H-colour: #FFF;
+  --F-colour: #FFF;
   --Main-colour: #999;
-  --MainTextColour: #FFF;
+  --MainTextColour: #252525;
 }
 
 header {
