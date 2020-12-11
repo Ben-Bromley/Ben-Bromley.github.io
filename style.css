@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root {
-  --H-colour: #FFF;
-  --F-colour: #252525;
+  --H-colour: #FEFEFE;
+  --F-colour: #202020;
   --Main-colour: #FFF;
+  --Body-colour: #EFEFDF;
   --MainTextColour: #252525;
 }
 
@@ -39,9 +40,9 @@ header {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: var(--Main-colour);
+  background-color: var(--Body-colour);
   overflow: hidden;
-  min-height: 1000px;
+  min-height: 100px;
 }
 
 /* REMOVED BECAUSE NOT USING BACKGROUND IMAGE
@@ -54,7 +55,7 @@ header {
 } */
 
 .foottext {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
   text-align: left;
@@ -67,9 +68,19 @@ header {
 }
 
 .HomeTitle {
-  text-align: center;
+  text-align: left;
   color: var(--MainTextColour);
-  margin: 80px
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.introtext {
+  color: rgba(100, 100, 100, 0.9);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  align-items: left;
+  padding: 5px 11%;
 }
 
 /* NOT IN USE NOW
@@ -131,17 +142,17 @@ header {
 } */
 
 .navtext, button {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   color: var(--MainTextColour);
   text-decoration: none;
 }
 
 .MainTextEmbed {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   color: var(--MainTextColour);
   text-decoration: underline;
 }
@@ -159,9 +170,9 @@ header {
 }
 
 h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 38px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 1000;
+  font-size: 54px;
   color: var(--MainTextColour);
   text-decoration: none;
   align-items: center;
@@ -169,7 +180,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 30px;
   color: var(--MainTextColour);
@@ -179,18 +190,18 @@ h2 {
 }
 
 .maintext {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 25px;
   color: var(--MainTextColour);
   text-decoration: none;
-  align-items: center;
-  padding: 0px 11%;
+  align-items: left;
+  padding: 5px 11%;
 }
 
 /*
 .columntwotext {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 200;
   font-size: 20px;
   color: var(--MainTextColour);
@@ -202,7 +213,7 @@ h2 {
 
 
 .SocialTitles {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 200;
   font-size: 25px;
   color: var(--MainTextColour);
