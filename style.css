@@ -3,7 +3,7 @@
   --H-colour: #FEFEFE;
   --F-colour: #202020;
   --Main-colour: #FFF;
-  --Body-colour: #EFEFDF;
+  --Body-colour: #eeeeee;
   --MainTextColour: #252525;
 }
 
@@ -18,12 +18,13 @@ header {
 footer {
   display: block;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: var(--F-colour);
+}
+
+footer {
   justify-content: space-between;
   align-items: center;
-  padding: 40px 5%;
+  background-color: var(--F-colour);
+  padding: 30px 5%;
   overflow: hidden;
 }
 
@@ -42,7 +43,7 @@ header {
   padding: 0;
   background-color: var(--Body-colour);
   overflow: hidden;
-  min-height: 100px;
+  min-height: 1000px;
 }
 
 /* REMOVED BECAUSE NOT USING BACKGROUND IMAGE
@@ -58,13 +59,16 @@ header {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  text-align: left;
   color: #aaa;
-  padding: 5px;
 }
 
 .footline {
   width: 100%
+}
+
+.footcontent {
+  display: flex;
+  justify-content: space-between;
 }
 
 .HomeTitle {
@@ -78,69 +82,18 @@ header {
   color: rgba(100, 100, 100, 0.9);
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 30px;
   align-items: left;
   padding: 5px 11%;
 }
 
-/* NOT IN USE NOW
-.homepanel {
-  padding: 5px 10px ;
-  background-color: rgba(50,50,50,0.7);
-  border: none;
-  border-radius: 50px;
-  margin: 30px;
-} */
 
-@media screen and (min-width: 1000px) {
-  /* TODO: add alt nav button to this section */
 
-  /* Main Home page columns */
-  main .row {
-    display: flex;
+@media screen and (max-width: 910px) {
+  x {
+    display: none;
   }
-   main .column {
-    float: left;
-    padding: 0px;
-  }
-  main .left {
-    width: 50%;
-    margin: 0px;
-  }
-  main .right {
-    width: 50%;
-    margin: 0px;
-  }
-
-  /* Footer columns */
-  footer .row {
-    display: flex;
-  }
-  footer .column {
-    float: left;
-    padding: 0px;
-  }
-  footer .left {
-    width: 50%;
-    margin: 10px;
-  }
-  footer .right {
-    width: 50%;
-    margin: 10px;
-  }
-}
-
-/* ¡ UNNEEDED CODE !
-@media screen and (max-width:999px) {
-  .colright {
-    margin:10px 11%;
-  }
-  .foottext {
-    margin: 2px 1%;
-    float: left;
-  }
-} */
-
+} 
 .navtext, button {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
@@ -172,7 +125,7 @@ header {
 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 1000;
-  font-size: 54px;
+  font-size: 48px;
   color: var(--MainTextColour);
   text-decoration: none;
   align-items: center;
