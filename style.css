@@ -1,29 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
-  --H-colour: #252525;
-  --F-colour: #252525;
-  --Main-colour: #999;
-  --MainTextColour: #FFF;
+  --H-colour: #FCFCFC;
+  --F-colour: #202020;
+  --Alternate-color: #eee;
+  --Body-colour: #FCFCFC;
+  --MainTextColour: #252525;
+  --Accent-color: rgba(10,90,169,0.8);
 }
 
+/* Header Content */
 header {
   display: block;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: var(--H-colour);
-}
-
-footer {
-  display: block;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: var(--F-colour);
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 5%;
-  overflow: hidden;
 }
 
 header {
@@ -34,183 +27,19 @@ header {
   overflow: hidden;
 }
 
-.mainbody {
-  display: block;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: var(--Main-colour);
-  overflow: hidden;
-  min-height: 1000px;
+/* Changes cursor to pointer
+when it hovers over image */
+.logo {
+  cursor: pointer;
 }
 
-.background {
-  background-image: url('HrefFiles/NewBeachImage.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center
-}
-
-.foottext {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  text-align: left;
-  color: #aaa;
-  padding: 5px;
-}
-
-.footline {
-  width: 100%
-}
-
-.HomeTitle {
-  text-align: center;
-  color: var(--MainTextColour);
-  margin: 80px;
-}
-
-.homepanel {
-  padding: 5px 5px ;
-  background-color: rgba(50,50,50,0.7);
-  border: none;
-  border-radius: 50px;
-  margin: 20px;
-}
-
-@media screen and (min-width: 1000px) {
-  /* TODO: add alt nav button to this section */
-
-  /* Main Home page columns */
-  main .row {
-    display: flex;
-  }
-   main .column {
-    float: left;
-    padding: 0px;
-  }
-  main .left {
-    width: 50%;
-    margin: 0px;
-  }
-  main .right {
-    width: 50%;
-    margin: 0px;
-  }
-
-  /* Footer columns */
-  footer .row {
-    display: flex;
-  }
-  footer .column {
-    float: left;
-    padding: 0px;
-  }
-  footer .left {
-    width: 50%;
-    margin: 10px;
-  }
-  footer .right {
-    width: 50%;
-    margin: 10px;
-  }
-}
-
-/* ¡ UNNEEDED CODE !
-@media screen and (max-width:999px) {
-  .colright {
-    margin:10px 11%;
-  }
-  .foottext {
-    margin: 2px 1%;
-    float: left;
-  }
-} */
-
+/* Styling for nav */
 .navtext, button {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  font-size: 18px;
-  color: #FFF;
-  text-decoration: none;
-}
-
-.MainTextEmbed {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #ccc;
-  text-decoration: underline;
-}
-
-.MainTextEmbed {
-  transition: all 0.2s ease 0s;
-}
-
-.MainTextEmbed:hover {
-  color: #0088a9
-}
-
-.HomeImage {
-  padding: 10px 35%;
-}
-
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 38px;
-  color: #edf0f1;
-  text-decoration: none;
-  align-items: center;
-  padding: 5px 11%;
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  color: #edf0f1;
-  text-decoration: none;
-  align-items: center;
-  padding: 5px 11%;
-}
-
-.maintext {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  font-size: 20px;
-  color: #ccc;
-  text-decoration: none;
-  align-items: center;
-  padding: 0px 11%;
-}
-
-/*
-.columntwotext {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  font-size: 20px;
-  color: var(--MainTextColour);
-  text-decoration: none;
-  align-items: center;
-  padding: 1px 0%;
-}
-*/
-
-
-.SocialTitles {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
   font-size: 25px;
   color: var(--MainTextColour);
   text-decoration: none;
-  align-items: center;
-  padding: 1px 0%;
-}
-
-.logo {
-  cursor: pointer;
 }
 
 .nav__links {
@@ -219,7 +48,7 @@ h2 {
 
 .nav__links li {
   display: inline-block;
-  padding: 0px 30px
+  padding: 0px 50px
 }
 
 .nav__links li a {
@@ -227,12 +56,12 @@ h2 {
 }
 
 .nav__links li a:hover {
-  color: #0088a9
+  color: var(--Accent-color)
 }
 
 button {
   padding: 9px 25px;
-  background-color: rgba(0,136,169,1);
+  background-color: var(--Alternate-color);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -240,12 +69,151 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0,136,169,0.8);
+    background-color: var(--Accent-color);
 }
 
+/* Main body Content */
+/* Formatting */
+.mainbody {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 10%;
+  padding-top: 50px;
+  background-color: var(--Body-colour);
+  overflow: hidden;
+  min-height: 800px;
+}
 
-/* TODO: SOCIAL MEDIA ICONS
-hover colour matching*/
+/* Introductory content */
+.prebody {
+  display: block;
+  background-color: var(--Alternate-color);
+  padding: 40px;
+}
+
+.HomeTitle {
+  text-align: left;
+  color: var(--MainTextColour);
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.introtext {
+  color: rgba(100, 100, 100, 0.9);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  align-items: left;
+  padding: 5px 11%;
+}
+
+/* Text formatting */
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 1000;
+  font-size: 48px;
+  color: var(--MainTextColour);
+  text-decoration: none;
+  align-items: center;
+  padding: 5px 11%;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--MainTextColour);
+  text-decoration: none;
+  align-items: center;
+  padding: 5px 11%;
+}
+
+.maintext {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+  color: var(--MainTextColour);
+  text-decoration: none;
+  align-items: left;
+  padding: 10px 11%;
+}
+
+/* For embedding links in main paragraphs */
+.MainTextEmbed {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--MainTextColour);
+  text-decoration: underline;
+}
+
+.MainTextEmbed {
+  transition: all 0.2s ease 0s;
+}
+
+.MainTextEmbed:hover {
+  color: var(--Accent-colour);
+}
+
+/* FOR EXPERIENCE PAGE ONLY */
+article {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  display: block;
+  margin: 0px 2%;
+  padding-bottom: 30px;
+
+}
+.Article-Title {
+  text-decoration: underline;
+}
+.Article-About {
+  font-style: italic;
+  opacity: 0.5;
+  font-size: 20px;
+}
+.Article-Content {
+
+}
+
+/* Footer Content */
+footer {
+  display: block;
+  box-sizing: border-box;
+}
+
+footer {
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--F-colour);
+  padding: 50px 5%;
+  overflow: hidden;
+}
+
+.foottext {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #aaa;
+}
+
+.footline {
+  width: 100%;
+  margin: 10px;
+}
+
+.footcontent {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+/* Changes screen according to page width */
+@media screen and (max-width: 910px) {
+  /*Add burger code*/
+}
+
+/* SOCIAL MEDIA ICONS */
 
 .fa {
   padding: 15px;
@@ -286,10 +254,6 @@ hover colour matching*/
   color: white;
 }
 
-.fa-reddit {
-  background: #ff5700;
-  color: white;
-}
 .fafoot {
   background: var(--HF-colour);
   text-decoration: none;
