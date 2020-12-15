@@ -208,19 +208,9 @@ footer {
   padding: 1%;
 }
 
-
-/* REMOVED BECAUSE NOT USING BACKGROUND IMAGE
-.background {
-  background-image: url('HrefFiles/image.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center
-} */
-
 /* Changes screen according to page width */
 @media screen and (max-width: 910px) {
-
+  /*Add burger code*/
 }
 
 /* SOCIAL MEDIA ICONS */
