@@ -1,31 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
-  --H-colour: #FEFEFE;
+  --H-colour: #FCFCFC;
   --F-colour: #202020;
-  --Main-colour: #FFF;
-  --Body-colour: #eeeeee;
+  --Alternate-color: #eee;
+  --Body-colour: #FCFCFC;
   --MainTextColour: #252525;
+  --Accent-color: rgba(10,90,169,0.8);
 }
 
+/* Header Content */
 header {
   display: block;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: var(--H-colour);
-}
-
-footer {
-  display: block;
-  box-sizing: border-box;
-}
-
-footer {
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--F-colour);
-  padding: 30px 5%;
-  overflow: hidden;
 }
 
 header {
@@ -36,45 +27,74 @@ header {
   overflow: hidden;
 }
 
+/* Changes cursor to pointer
+when it hovers over image */
+.logo {
+  cursor: pointer;
+}
+
+/* Styling for nav */
+.navtext, button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--MainTextColour);
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 50px
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: var(--Accent-color)
+}
+
+button {
+  padding: 9px 25px;
+  background-color: var(--Alternate-color);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: var(--Accent-color);
+}
+
+/* Main body Content */
+/* Formatting */
 .mainbody {
   display: block;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  padding: 20px 10%;
+  padding-top: 50px;
   background-color: var(--Body-colour);
   overflow: hidden;
-  min-height: 1000px;
+  min-height: 800px;
 }
 
-/* REMOVED BECAUSE NOT USING BACKGROUND IMAGE
-.background {
-  background-image: url('HrefFiles/BeachHomeImage.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center
-} */
-
-.foottext {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  color: #aaa;
-}
-
-.footline {
-  width: 100%
-}
-
-.footcontent {
-  display: flex;
-  justify-content: space-between;
+/* Introductory content */
+.prebody {
+  display: block;
+  background-color: var(--Alternate-color);
+  padding: 40px;
 }
 
 .HomeTitle {
   text-align: left;
   color: var(--MainTextColour);
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 0;
 }
 
@@ -87,41 +107,7 @@ header {
   padding: 5px 11%;
 }
 
-
-
-@media screen and (max-width: 910px) {
-  x {
-    display: none;
-  }
-} 
-.navtext, button {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--MainTextColour);
-  text-decoration: none;
-}
-
-.MainTextEmbed {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  color: var(--MainTextColour);
-  text-decoration: underline;
-}
-
-.MainTextEmbed {
-  transition: all 0.2s ease 0s;
-}
-
-.MainTextEmbed:hover {
-  color: #0088a9
-}
-
-.HomeImage {
-  padding: 10px 35%;
-}
-
+/* Text formatting */
 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 1000;
@@ -149,66 +135,93 @@ h2 {
   color: var(--MainTextColour);
   text-decoration: none;
   align-items: left;
-  padding: 5px 11%;
+  padding: 10px 11%;
 }
 
-/*
-.columntwotext {
+/* For embedding links in main paragraphs */
+.MainTextEmbed {
   font-family: "Open Sans", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--MainTextColour);
+  text-decoration: underline;
+}
+
+.MainTextEmbed {
+  transition: all 0.2s ease 0s;
+}
+
+.MainTextEmbed:hover {
+  color: var(--Accent-colour);
+}
+
+/* FOR EXPERIENCE PAGE ONLY */
+article {
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  color: var(--MainTextColour);
-  text-decoration: none;
-  align-items: center;
-  padding: 1px 0%;
+  display: block;
+  margin: 0px 2%;
+  padding-bottom: 30px;
+
 }
-*/
+.Article-Title {
+  text-decoration: underline;
+}
+.Article-About {
+  font-style: italic;
+  opacity: 0.5;
+  font-size: 20px;
+}
+.Article-Content {
 
+}
 
-.SocialTitles {
+/* Footer Content */
+footer {
+  display: block;
+  box-sizing: border-box;
+}
+
+footer {
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--F-colour);
+  padding: 50px 5%;
+  overflow: hidden;
+}
+
+.foottext {
   font-family: "Open Sans", sans-serif;
-  font-weight: 200;
-  font-size: 25px;
-  color: var(--MainTextColour);
-  text-decoration: none;
-  align-items: center;
-  padding: 1px 0%;
+  font-weight: 400;
+  font-size: 15px;
+  color: #aaa;
 }
 
-.logo {
-  cursor: pointer;
+.footline {
+  width: 100%;
+  margin: 10px;
 }
 
-.nav__links {
-  list-style: none;
+.footcontent {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
 }
 
-.nav__links li {
-  display: inline-block;
-  padding: 0px 30px
-}
 
-.nav__links li a {
-  transition: all 0.3s ease 0s;
-}
+/* REMOVED BECAUSE NOT USING BACKGROUND IMAGE
+.background {
+  background-image: url('HrefFiles/image.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center
+} */
 
-.nav__links li a:hover {
-  color: #0088a9
-}
+/* Changes screen according to page width */
+@media screen and (max-width: 910px) {
 
-button {
-  padding: 9px 25px;
-  background-color: rgba(0,136,169,1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
 }
-
-button:hover {
-    background-color: rgba(0,136,169,0.8);
-}
-
 
 /* SOCIAL MEDIA ICONS */
 
@@ -236,11 +249,6 @@ button:hover {
   color: white;
 }
 
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
 .fa-youtube {
   background: #bb0000;
   color: white;
@@ -251,36 +259,11 @@ button:hover {
   color: white;
 }
 
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
-
-.fa-snapchat-ghost {
-  background: #fffc00;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.fa-tumblr {
-  background: #2c4762;
-  color: white;
-}
-
-.fa-flickr {
-  background: #f40083;
-  color: white;
-}
-
 .fa-soundcloud {
   background: #ff5500;
   color: white;
 }
 
-.fa-reddit {
-  background: #ff5700;
-  color: white;
-}
 .fafoot {
   background: var(--HF-colour);
   text-decoration: none;
