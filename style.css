@@ -35,6 +35,43 @@ header {
   border-width: 5px;
 }
 
+.squircle {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  padding: 10px;
+  margin: auto;
+  width: 3%; /* You can control the
+  size of the whole burger menu by
+  changing this value */
+  background-color: var(--Alternate-color);
+  cursor: pointer;
+}
+.squircle:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+div .line {
+  position: absolute;
+  width: 70%;
+  height: 7%; /* You can control the
+  size of the lines by changing this value */
+  background-color: #fff;
+
+}
+
+#line1 {
+  top: 18%;
+}
+#line2 {
+  top: 45%;
+}
+#line3 {
+  top: 72%;
+}
+
 /* Changes cursor to pointer
 when it hovers over image */
 .logo {
