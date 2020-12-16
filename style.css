@@ -4,7 +4,7 @@
 :root {
   --H-colour: #FCFCFC;
   --F-colour: #202020;
-  --Alternate-color: #eee;
+  --Alternate-color: #658fcd;
   --Body-colour: #FCFCFC;
   --MainTextColour: #252525;
   --Accent-color: rgba(10,90,169,0.8);
@@ -15,16 +15,24 @@ header {
   display: block;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   background-color: var(--H-colour);
 }
 
 header {
+  position: fixed;
+  right: 0px;
+  left: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 10%;
+  padding: 20px 10%;
   overflow: hidden;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 5px;
+  border-top-style: solid;
+  border-top-color: black;
+  border-width: 5px;
 }
 
 /* Changes cursor to pointer
@@ -34,11 +42,19 @@ when it hovers over image */
 }
 
 /* Styling for nav */
-.navtext, button {
+.navtext {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 25px;
   color: var(--MainTextColour);
+  text-decoration: none;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
   text-decoration: none;
 }
 
@@ -88,18 +104,25 @@ button:hover {
 .prebody {
   display: block;
   background-color: var(--Alternate-color);
-  padding: 40px;
+  padding: 120px 40px 40px 40px;
+  border-bottom-style: solid;
+  border-bottom-color:black;
+  border-bottom-width:5px;
 }
 
 .HomeTitle {
   text-align: left;
+  color: white;
+  /*
   color: var(--MainTextColour);
-  margin-top: 0px;
+  */
   margin-bottom: 0;
 }
 
 .introtext {
-  color: rgba(100, 100, 100, 0.9);
+  color: white;
+  /*
+  color: rgba(100, 100, 100, 0.9);*/
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -169,7 +192,6 @@ article {
 }
 .Article-About {
   font-style: italic;
-  opacity: 0.5;
   font-size: 20px;
 }
 .Article-Content {
