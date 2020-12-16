@@ -36,21 +36,31 @@ header {
 }
 
 .squircle {
+  display: none;
   position: absolute;
-  top: 25px;
+  top: 20px;
   right: 50px;
   padding: 10px;
   margin: auto;
-  width: 3%; /* You can control the
+  width: 45px; /* You can control the
   size of the whole burger menu by
   changing this value */
   background-color: var(--Alternate-color);
   cursor: pointer;
+  border-radius: 15%;
 }
 .squircle:before {
   content: "";
   display: block;
   padding-top: 100%;
+}
+
+.squircle {
+  transition: all 0.3s ease 0s;
+}
+
+.squircle:hover {
+  opacity: 0.8;
 }
 
 div .line {
@@ -122,7 +132,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--Accent-color);
+    opacity: 0.8;
 }
 
 /* Main body Content */
@@ -158,7 +168,7 @@ button:hover {
 
 .introtext {
   color: white;
-  /*
+  /* OLD COLOR:
   color: rgba(100, 100, 100, 0.9);*/
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -268,8 +278,17 @@ footer {
 }
 
 /* Changes screen according to page width */
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1100px) {
   /*Add burger code*/
+  .nav__links {
+    display: none;
+  }
+  .cta {
+    display: none;
+  }
+  .squircle {
+    display: inline;
+  }
 }
 
 /* SOCIAL MEDIA ICONS */
