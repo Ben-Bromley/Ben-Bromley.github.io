@@ -268,7 +268,7 @@ footer {
 
 .footline {
   width: 100%;
-  margin: 10px;
+  margin: 15px;
 }
 
 .footcontent {
@@ -289,7 +289,12 @@ footer {
   .squircle {
     display: inline;
   }
+  * {zoom: 0.95;}
 }
+
+/* makes page shrinking
+and zooming animated */
+* {transition: all 0.3s ease 0s;}
 
 /* SOCIAL MEDIA ICONS */
 
