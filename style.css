@@ -25,7 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
+  padding: 2% 8% 2% 8%;
   overflow: hidden;
   border-bottom-style: solid;
   border-bottom-color: black;
@@ -34,7 +34,7 @@ header {
   border-top-color: black;
   border-width: 5px;
 }
-
+/* TODO CONVERT PX TO % */
 .squircle {
   display: none;
   position: absolute;
@@ -126,7 +126,7 @@ button {
   padding: 9px 25px;
   background-color: var(--Alternate-color);
   border: none;
-  border-radius: 50px;
+  border-radius: 50em;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -140,8 +140,7 @@ button:hover {
 .mainbody {
   display: block;
   box-sizing: border-box;
-  padding: 20px 10%;
-  padding-top: 50px;
+  padding: 10%;
   background-color: var(--Body-colour);
   overflow: hidden;
   min-height: 800px;
@@ -151,7 +150,10 @@ button:hover {
 .prebody {
   display: block;
   background-color: var(--Alternate-color);
+  /*
   padding: 120px 40px 40px 40px;
+  */
+  padding: 9% 5% 3% 5%;
   border-bottom-style: solid;
   border-bottom-color:black;
   border-bottom-width:5px;
@@ -160,21 +162,16 @@ button:hover {
 .HomeTitle {
   text-align: left;
   color: white;
-  /*
-  color: var(--MainTextColour);
-  */
   margin-bottom: 0;
 }
 
 .introtext {
   color: white;
-  /* OLD COLOR:
-  color: rgba(100, 100, 100, 0.9);*/
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 30px;
   align-items: left;
-  padding: 5px 11%;
+  padding: 0px 11%;
 }
 
 /* Text formatting */
@@ -185,17 +182,7 @@ h1 {
   color: var(--MainTextColour);
   text-decoration: none;
   align-items: center;
-  padding: 5px 11%;
-}
-
-h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  color: var(--MainTextColour);
-  text-decoration: none;
-  align-items: center;
-  padding: 5px 11%;
+  padding: 0px 11%;
 }
 
 .maintext {
@@ -205,7 +192,7 @@ h2 {
   color: var(--MainTextColour);
   text-decoration: none;
   align-items: left;
-  padding: 10px 11%;
+  padding: 0px 11%;
 }
 
 /* For embedding links in main paragraphs */
@@ -252,10 +239,8 @@ footer {
 }
 
 footer {
-  justify-content: space-between;
-  align-items: center;
   background-color: var(--F-colour);
-  padding: 50px 5%;
+  padding: 0px 8%;
   overflow: hidden;
 }
 
@@ -267,14 +252,15 @@ footer {
 }
 
 .footline {
-  width: 100%;
-  margin: 15px;
+  width: 90%;
+  margin: 2% 5% 2% 5%;
+
 }
 
 .footcontent {
   display: flex;
   justify-content: space-between;
-  padding: 1%;
+  padding: 0% 6.5% 0% 5.5%;
 }
 
 /* Changes screen according to page width */
@@ -288,6 +274,12 @@ footer {
   }
   .squircle {
     display: inline;
+  }
+  .maintext {
+    padding: 0%;
+  }
+  .prebody {
+    padding: 15% 1% 2% 1%;
   }
   * {zoom: 0.95;}
 }
