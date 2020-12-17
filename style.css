@@ -38,10 +38,10 @@ header {
 .squircle {
   display: none;
   position: absolute;
-  top: 20px;
-  right: 50px;
-  padding: 10px;
-  margin: auto;
+  top: 15%;
+  bottom: 15%;
+  right: 5%;
+  padding: 2%;
   width: 45px; /* You can control the
   size of the whole burger menu by
   changing this value */
@@ -65,9 +65,12 @@ header {
 
 div .line {
   position: absolute;
+  top: 15%;
+  bottom: 15%;
+  right: 15%;
   width: 70%;
-  height: 7%; /* You can control the
-  size of the lines by changing this value */
+  height: 7%; /* control size of the lines
+  by changing this value */
   background-color: #fff;
 
 }
@@ -273,7 +276,7 @@ footer {
     display: none;
   }
   .squircle {
-    display: inline;
+    display: block;
   }
   .maintext {
     padding: 0%;
