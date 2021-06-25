@@ -36,7 +36,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 body {color: white;}
 header {
     background-color: #000000;
-    background-image: url("../assets/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+    background-image: url("./assets/james-harrison-vpOeXr5wmR4-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
@@ -47,7 +47,7 @@ header {
     display: flex;
     flex-direction: column;
 }
-div, nav {border: 1px dotted blue;}
+// div, nav {border: 1px dotted blue;}
 p {max-width: 60ch;}
 #overlay {
     background-color: #000b;
