@@ -33,6 +33,8 @@ blockquote:before, blockquote:after,
 q:before, q:after {content: '';content: none;}
 table {border-collapse: collapse;border-spacing: 0;}
 /* end of css reset */
+
+@mixin flex-align-center() {display: flex;align-items: center;}
 body {color: white;}
 header {
     background-color: #000000;
@@ -69,24 +71,37 @@ ul#navigation {
     padding: 10px;
     li {
         list-style: none;
-        padding: 0 10px;
+        padding: 0 20px;
         a {
             color: white;
             text-decoration: none;
-            &:hover {color: lightgrey}
+            font-size: 1.25rem;
+            &:hover {
+                color: grey;
+            }
+        }
+        .highlight-link {
+            border: 2px solid white;
+            padding: 10px;
+            transition: all 0.3s linear;
+            &:hover {
+                color: black;
+                background-color: white;
+            }
         }
     }
 }
 #title-container {
     height: 50vh;
-    display: flex;
-    align-items: center;
-    max-width: 450px;
-    #title {font-size: 3rem;}
+    @include flex-align-center();
+    max-width: 700px;
+    #title {font-size: 4rem;}
 }
 #intro-text-container {
     height: 30vh;
-    display: flex;
-    align-items: center;
+    @include flex-align-center();
 }
+
+
+
 h2 {color: black;}

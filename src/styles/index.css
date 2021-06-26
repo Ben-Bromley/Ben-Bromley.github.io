@@ -108,16 +108,29 @@ ul#navigation {
 
 ul#navigation li {
   list-style: none;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 ul#navigation li a {
   color: white;
   text-decoration: none;
+  font-size: 1.25rem;
 }
 
 ul#navigation li a:hover {
-  color: lightgrey;
+  color: grey;
+}
+
+ul#navigation li .highlight-link {
+  border: 2px solid white;
+  padding: 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+ul#navigation li .highlight-link:hover {
+  color: black;
+  background-color: white;
 }
 
 #title-container {
@@ -128,11 +141,11 @@ ul#navigation li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 450px;
+  max-width: 700px;
 }
 
 #title-container #title {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 #intro-text-container {
