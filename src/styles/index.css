@@ -19,6 +19,8 @@ time, mark, audio, video {
   font: inherit;
   font-family: sans-serif;
   vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -55,14 +57,34 @@ body {
   color: white;
 }
 
-header {
-  background-color: #000000;
+p, a {
+  font-family: Roboto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
+header#header-landing {
   background-image: url("../assets/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+}
+
+article#about {
+  background-image: url("../assets/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+}
+
+article#portfolio {
+  background-image: url("../assets/burst-kUqqaRjJuw0-unsplash.jpg");
+}
+
+.page {
+  background-color: #000000;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 2vh 5vw;
-  height: 96vh;
+  padding: 4vh 7vw;
+  height: 104vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,21 +94,30 @@ header {
           flex-direction: column;
 }
 
-p {
+p#intro-text {
   max-width: 60ch;
+  line-height: 2;
 }
 
-#overlay {
+p {
+  line-height: 1.5;
+  margin: 20px 5px;
+}
+
+.overlay {
   background-color: #000b;
-  position: absolute;
-  top: 0;
+  position: fixed;
   left: 0;
   height: 100vh;
   width: 100%;
   z-index: 1;
 }
 
-#nav-container, #title-container, #intro-text-container {
+.overlay-top {
+  top: 0;
+}
+
+.container {
   z-index: 2;
 }
 
@@ -97,13 +128,19 @@ p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  padding: 30px 10px;
+  z-index: 3;
+  background-color: #0008;
 }
 
 ul#navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
+  padding: 20px;
 }
 
 ul#navigation li {
@@ -134,7 +171,7 @@ ul#navigation li .highlight-link:hover {
 }
 
 #title-container {
-  height: 50vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,11 +182,11 @@ ul#navigation li .highlight-link:hover {
 }
 
 #title-container #title {
-  font-size: 4rem;
+  font-size: 3rem;
+  line-height: 1.2;
 }
 
 #intro-text-container {
-  height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,7 +195,42 @@ ul#navigation li .highlight-link:hover {
           align-items: center;
 }
 
-h2 {
-  color: black;
+#about-content-container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 80%;
+  min-width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.img-container, .content-container {
+  min-width: 200px;
+  max-width: 450px;
+}
+
+.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#headshot {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=index.css.map */
