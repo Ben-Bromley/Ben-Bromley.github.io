@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Ben-Bromley.github.io/static/css/main.f7d9050a.chunk.css",
-    "main.js": "/Ben-Bromley.github.io/static/js/main.4793fea9.chunk.js",
-    "main.js.map": "/Ben-Bromley.github.io/static/js/main.4793fea9.chunk.js.map",
-    "runtime-main.js": "/Ben-Bromley.github.io/static/js/runtime-main.97f46398.js",
-    "runtime-main.js.map": "/Ben-Bromley.github.io/static/js/runtime-main.97f46398.js.map",
-    "static/js/2.09e04e26.chunk.js": "/Ben-Bromley.github.io/static/js/2.09e04e26.chunk.js",
-    "static/js/2.09e04e26.chunk.js.map": "/Ben-Bromley.github.io/static/js/2.09e04e26.chunk.js.map",
-    "static/js/3.42ceb39e.chunk.js": "/Ben-Bromley.github.io/static/js/3.42ceb39e.chunk.js",
-    "static/js/3.42ceb39e.chunk.js.map": "/Ben-Bromley.github.io/static/js/3.42ceb39e.chunk.js.map",
-    "index.html": "/Ben-Bromley.github.io/index.html",
-    "static/css/main.f7d9050a.chunk.css.map": "/Ben-Bromley.github.io/static/css/main.f7d9050a.chunk.css.map",
-    "static/js/2.09e04e26.chunk.js.LICENSE.txt": "/Ben-Bromley.github.io/static/js/2.09e04e26.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/Ben-Bromley.github.io/static/media/james-harrison-vpOeXr5wmR4-unsplash.f1eafe01.jpg"
+    "main.css": "/homepage/static/css/main.005642dd.chunk.css",
+    "main.js": "/homepage/static/js/main.4793fea9.chunk.js",
+    "main.js.map": "/homepage/static/js/main.4793fea9.chunk.js.map",
+    "runtime-main.js": "/homepage/static/js/runtime-main.9696406d.js",
+    "runtime-main.js.map": "/homepage/static/js/runtime-main.9696406d.js.map",
+    "static/js/2.09e04e26.chunk.js": "/homepage/static/js/2.09e04e26.chunk.js",
+    "static/js/2.09e04e26.chunk.js.map": "/homepage/static/js/2.09e04e26.chunk.js.map",
+    "static/js/3.42ceb39e.chunk.js": "/homepage/static/js/3.42ceb39e.chunk.js",
+    "static/js/3.42ceb39e.chunk.js.map": "/homepage/static/js/3.42ceb39e.chunk.js.map",
+    "index.html": "/homepage/index.html",
+    "static/css/main.005642dd.chunk.css.map": "/homepage/static/css/main.005642dd.chunk.css.map",
+    "static/js/2.09e04e26.chunk.js.LICENSE.txt": "/homepage/static/js/2.09e04e26.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/homepage/static/media/james-harrison-vpOeXr5wmR4-unsplash.f1eafe01.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.97f46398.js",
+    "static/js/runtime-main.9696406d.js",
     "static/js/2.09e04e26.chunk.js",
-    "static/css/main.f7d9050a.chunk.css",
+    "static/css/main.005642dd.chunk.css",
     "static/js/main.4793fea9.chunk.js"
   ]
 }
