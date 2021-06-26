@@ -2,7 +2,7 @@ import '../styles/index.css';
 
 function Nav() {
     return (
-        <div id="nav-container">
+        <div id="nav-container" className="container">
             <nav>
                 <ul id="navigation">
                     <li><a href="#">About</a></li>
