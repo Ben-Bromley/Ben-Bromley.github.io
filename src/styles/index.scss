@@ -137,15 +137,27 @@ table {
 	align-items: center;
 }
 
+$primary: #222;
+$alt: #ddd;
+
 // main styles
 body {
-	color: white;
+	color: $alt;
+	scroll-behavior: smooth;
 }
 p,
 li,
-a {
+a,
+label,
+button {
 	font-family: 'Montserrat', sans-serif;
 }
+
+p {
+	line-height: 1.5;
+	margin: 20px 5px;
+}
+
 h1,
 h2,
 h3,
@@ -156,6 +168,10 @@ h4 {
 h2 {
 	font-size: 2rem;
 	margin: 30px 0;
+}
+
+h3 {
+	font-size: 1.6rem;
 }
 
 // adding background image for each sectionß
@@ -169,22 +185,19 @@ article#portfolio {
 	background-image: url("../assets/burst-kUqqaRjJuw0-unsplash.jpg");
 }
 .page {
-	background-color: #000000;
+	background-color: $primary;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	padding: 4vh 7vw;
 	height: 104vh;
+	min-height: 600px;
 	display: flex;
 	flex-direction: column;
 }
 p#intro-text {
 	max-width: 60ch;
 	line-height: 2;
-}
-p {
-	line-height: 1.5;
-	margin: 20px 5px;
 }
 .overlay {
 	background-color: #000b;
@@ -217,7 +230,7 @@ ul#navigation {
 		list-style: none;
 		padding: 0 20px;
 		a {
-			color: white;
+			color: $alt;
 			text-decoration: none;
 			font-size: 1.25rem;
 			&:hover {
@@ -225,12 +238,12 @@ ul#navigation {
 			}
 		}
 		.highlight-link {
-			border: 2px solid white;
+			border: 2px solid $alt;
 			padding: 10px;
 			transition: all 0.3s linear;
 			&:hover {
-				color: black;
-				background-color: white;
+				color: $primary;
+				background-color: $alt;
 			}
 		}
 	}
@@ -248,19 +261,18 @@ ul#navigation {
 	@include flex-align-center();
 }
 // .divider {height: 90%; width: 2px; background-color: white;}
-#about-content-container {
+#about-content-container,
+#portfolio-container {
 	margin: auto;
 	@include flex-align-center();
 	justify-content: space-around;
 	min-height: 80%;
 	min-width: 100%;
 	flex-wrap: wrap;
-	// border: 1px solid orange;
-	// flex-basis: 500px;
 }
+
 .img-container,
 .content-container {
-	// border: 1px solid lime;
 	min-width: 200px;
 	max-width: 450px;
 }
@@ -269,7 +281,60 @@ ul#navigation {
 	justify-content: center;
 }
 #headshot {
-	width: 80%;
+	width: 70%;
 	max-width: 500px;
 	border-radius: 50%;
+}
+
+#portfolio-container {
+	.portfolio {
+		height: 50vh;
+	}
+}
+
+.portfolio-intro {
+	color: grey;
+	line-height: 2;
+}
+
+#work-title {
+	margin: 20px 0 5px 0;
+}
+
+#work-subtitle {
+	margin-top: 0;
+	margin-left: 0;
+	color: grey;
+	font-size: 1.3rem;
+}
+
+.work-info {
+	line-height: 2;
+}
+
+#get-in-touch-container {
+	margin: auto;
+	min-height: 60%;
+	min-width: 100%;
+}
+
+#form-item-container {
+	@include flex-align-center();
+	flex-direction: column;
+	height: 60vh;
+	justify-content: space-around;
+}
+
+#message-form {
+	input,
+	textarea {
+		width: 30vw;
+		min-width: 350px;
+		padding: 10px;
+		margin: 10px;
+		border-radius: 5px;
+	}
+	button {
+		padding: 10px 20px;
+	}
 }

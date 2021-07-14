@@ -135,13 +135,21 @@ table {
 
 /* end of css reset */
 body {
-  color: white;
+  color: #ddd;
+  scroll-behavior: smooth;
 }
 
 p,
 li,
-a {
+a,
+label,
+button {
   font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 1.5;
+  margin: 20px 5px;
 }
 
 h1,
@@ -157,6 +165,10 @@ h2 {
   margin: 30px 0;
 }
 
+h3 {
+  font-size: 1.6rem;
+}
+
 header#header-landing {
   background-image: url("../assets/james-harrison-vpOeXr5wmR4-unsplash.jpg");
 }
@@ -170,12 +182,13 @@ article#portfolio {
 }
 
 .page {
-  background-color: #000000;
+  background-color: #222;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 4vh 7vw;
   height: 104vh;
+  min-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,11 +201,6 @@ article#portfolio {
 p#intro-text {
   max-width: 60ch;
   line-height: 2;
-}
-
-p {
-  line-height: 1.5;
-  margin: 20px 5px;
 }
 
 .overlay {
@@ -240,7 +248,7 @@ ul#navigation li {
 }
 
 ul#navigation li a {
-  color: white;
+  color: #ddd;
   text-decoration: none;
   font-size: 1.25rem;
 }
@@ -250,15 +258,15 @@ ul#navigation li a:hover {
 }
 
 ul#navigation li .highlight-link {
-  border: 2px solid white;
+  border: 2px solid #ddd;
   padding: 10px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
 ul#navigation li .highlight-link:hover {
-  color: black;
-  background-color: white;
+  color: #222;
+  background-color: #ddd;
 }
 
 #title-container {
@@ -286,7 +294,8 @@ ul#navigation li .highlight-link:hover {
           align-items: center;
 }
 
-#about-content-container {
+#about-content-container,
+#portfolio-container {
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,8 +330,67 @@ ul#navigation li .highlight-link:hover {
 }
 
 #headshot {
-  width: 80%;
+  width: 70%;
   max-width: 500px;
   border-radius: 50%;
+}
+
+#portfolio-container .portfolio {
+  height: 50vh;
+}
+
+.portfolio-intro {
+  color: grey;
+  line-height: 2;
+}
+
+#work-title {
+  margin: 20px 0 5px 0;
+}
+
+#work-subtitle {
+  margin-top: 0;
+  margin-left: 0;
+  color: grey;
+  font-size: 1.3rem;
+}
+
+.work-info {
+  line-height: 2;
+}
+
+#get-in-touch-container {
+  margin: auto;
+  min-height: 60%;
+  min-width: 100%;
+}
+
+#form-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#message-form input,
+#message-form textarea {
+  width: 30vw;
+  min-width: 350px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#message-form button {
+  padding: 10px 20px;
 }
 /*# sourceMappingURL=index.css.map */
